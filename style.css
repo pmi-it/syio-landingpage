@@ -8,6 +8,26 @@ body {
     cursor: crosshair;
 }
 
+a,
+a:active {
+    color: green;
+    padding: 0 0.5vw;
+}
+
+a:hover {
+    color: white;
+    animation-name: kf-a-hover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kf-a-hover {
+    0% {background-color: rgb(0, 128, 0);}
+    50% {background-color: rgba(0, 128, 0, 0.479);}    
+    100% {background-color: rgb(0, 128, 0);}    
+}
+
+
 .whole-body {
     width: 100%;
     height: 100%;
@@ -72,6 +92,10 @@ body {
     margin: auto;
     align-items: center;
     text-align: center;
+}
+
+.disclaimer-grid > div {
+    line-height: 150%;
 }
 
 @media screen and (max-width: 720px) {
