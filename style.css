@@ -1,0 +1,75 @@
+body {
+    background-color: #f0fddc;
+    margin: 0;
+}
+
+.whole-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.led-grid {
+    display: grid;
+    grid-template-columns: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
+    grid-gap: 1vw;
+    font-size: 6vw;
+    font-family: monospace;
+    margin: auto;
+    align-items: center;
+    text-align: center;}
+
+.led {
+    height:9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.led:hover {
+    animation-name: kf-ledhover;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes kf-ledhover {
+    from {background-color: rgb(0, 128, 0);
+          color: white;}
+    to {background-color: rgba(0, 128, 0, 0.144);
+        color: black;}    
+}
+
+.disclaimer-grid {
+    display: grid;
+    grid-template-columns: 18vw 60vw 18vw;
+    grid-gap: 1vw;
+    font-size: 2vw;
+    font-family: monospace;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+    .disclaimer-grid {
+        font-size: 14px;
+    }
+}
+
+.color0 {
+    color: black;
+}
+
+.color1 {
+    color: #8ae200;
+}
+
+.color2 {
+    color: gray;
+}
+
+.color3 {
+    color: gainsboro;
+}
+
