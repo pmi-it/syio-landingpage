@@ -1,6 +1,11 @@
 body {
     background-color: #f0fddc;
     margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: crosshair;
 }
 
 .whole-body {
@@ -38,6 +43,24 @@ body {
           color: white;}
     to {background-color: rgba(0, 128, 0, 0.144);
         color: black;}    
+}
+
+.ledo {
+    color: #f0fddc;
+}
+
+.ledo:hover {
+    
+    animation-name: kf-ledohover;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes kf-ledohover {
+    from {background-color: rgb(0, 128, 0);
+          color: white;}
+    to {background-color: rgba(0, 128, 0, 0.144);
+        color: #f0fddc;}    
 }
 
 .disclaimer-grid {
